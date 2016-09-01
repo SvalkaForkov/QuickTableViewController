@@ -6,6 +6,8 @@ matrix:
     - env: SCHEME=QuickTableViewController-iOS
       before_script:
         - bundle exec danger
+      after_success:
+        - make documentation
 cache:
   bundler: true
   directories:

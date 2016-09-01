@@ -15,3 +15,4 @@ build-example:
 
 doc:
 	jazzy --config .jazzy.yaml
+	sh ./scripts/update-docs.sh

@@ -5,8 +5,8 @@ workspace "QuickTableViewController"
 
 target "QuickTableViewControllerTests-iOS" do
   project "QuickTableViewController"
-  pod "Nimble"
-  pod "Quick"
+  pod "Nimble", git: "https://github.com/Quick/Nimble.git", commit: "db706fc"
+  pod "Quick", git: "https://github.com/Quick/Quick.git", commit: "1503fb0"
 end
 
 target :Example do

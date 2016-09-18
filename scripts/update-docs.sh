@@ -15,7 +15,10 @@ do
 done
 
 
-cd docs
+cd docs && pwd
+git checkout gh-pages
+git status
+git --no-pager show
 cp -rfv output/* .
 git add .
 git commit -m "[CI] Update documentation at $(date +'%Y-%m-%d %H:%M:%S %z')"
